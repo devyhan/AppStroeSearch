@@ -11,9 +11,9 @@ import ComposableArchitecture
 import Utils
 import SearchInterface
 
-// MARK: - DI Containor
+// MARK: - DI Container
 
-public final class DependencyContainor {
+public final class DependencyContainer {
   public let appSearch: AppSearch
 
   public init(appSearch: AppSearch) {
@@ -23,8 +23,8 @@ public final class DependencyContainor {
 
 // MARK: - Testable Values
 
-extension DependencyContainor: TestDependencyKey {
-  public static var testValue: DependencyContainor {
+extension DependencyContainer: TestDependencyKey {
+  public static var testValue: DependencyContainer {
     .init(appSearch: AppSearchMock())
   }
 }

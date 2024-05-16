@@ -8,8 +8,8 @@
 import Dependencies
 
 extension DependencyValues {
-  public var containor: DependencyContainor {
-    get { self[DependencyContainor.self] }
-    set { self[DependencyContainor.self] = newValue }
+  public var containor: DependencyContainer {
+    get { self[DependencyContainer.self] }
+    set { self[DependencyContainer.self] = newValue }
   }
 }
