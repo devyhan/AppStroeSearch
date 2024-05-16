@@ -13,9 +13,9 @@ import Networking
 import Repository
 import DependencyInjection
 
-extension DependencyContainor: DependencyKey {
-  public static var liveValue: DependencyContainor {
-    DependencyContainor(
+extension DependencyContainer: DependencyKey {
+  public static var liveValue: DependencyContainer {
+    DependencyContainer(
       appSearch: AppSearchImpl(
         apiClient: APIClientImpl(),
         dbClient: DBClientImpl(userDefatults: UserDefaults.standard)
